@@ -1,0 +1,14 @@
+C:\Users\kayky\source\repos\Account\Account\bin\Debug\net8.0\Account.exe
+C:\Users\kayky\source\repos\Account\Account\bin\Debug\net8.0\Account.deps.json
+C:\Users\kayky\source\repos\Account\Account\bin\Debug\net8.0\Account.runtimeconfig.json
+C:\Users\kayky\source\repos\Account\Account\bin\Debug\net8.0\Account.dll
+C:\Users\kayky\source\repos\Account\Account\bin\Debug\net8.0\Account.pdb
+C:\Users\kayky\source\repos\Account\Account\obj\Debug\net8.0\Account.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayky\source\repos\Account\Account\obj\Debug\net8.0\Account.AssemblyInfoInputs.cache
+C:\Users\kayky\source\repos\Account\Account\obj\Debug\net8.0\Account.AssemblyInfo.cs
+C:\Users\kayky\source\repos\Account\Account\obj\Debug\net8.0\Account.csproj.CoreCompileInputs.cache
+C:\Users\kayky\source\repos\Account\Account\obj\Debug\net8.0\Account.dll
+C:\Users\kayky\source\repos\Account\Account\obj\Debug\net8.0\refint\Account.dll
+C:\Users\kayky\source\repos\Account\Account\obj\Debug\net8.0\Account.pdb
+C:\Users\kayky\source\repos\Account\Account\obj\Debug\net8.0\Account.genruntimeconfig.cache
+C:\Users\kayky\source\repos\Account\Account\obj\Debug\net8.0\ref\Account.dll
