@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kayky\\source\\repos\\Projetos\\Lambda\\",
+  "WorkspaceRootPath": "C:\\Users\\kayky\\source\\repos\\Lambda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47B9C7DC-CC27-4B29-BECE-EBD8850B31BC}|Lambda\\Lambda.csproj|c:\\users\\kayky\\source\\repos\\projetos\\lambda\\lambda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{47B9C7DC-CC27-4B29-BECE-EBD8850B31BC}|Lambda\\Lambda.csproj|c:\\users\\kayky\\source\\repos\\lambda\\lambda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{47B9C7DC-CC27-4B29-BECE-EBD8850B31BC}|Lambda\\Lambda.csproj|solutionrelative:lambda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Projetos\\Lambda\\Lambda\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Lambda\\Lambda\\Program.cs",
               "RelativeDocumentMoniker": "Lambda\\Program.cs",
-              "ToolTip": "C:\\Users\\kayky\\source\\repos\\Projetos\\Lambda\\Lambda\\Program.cs",
+              "ToolTip": "C:\\Users\\kayky\\source\\repos\\Lambda\\Lambda\\Program.cs",
               "RelativeToolTip": "Lambda\\Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAwCcAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-12T17:09:29.781Z",
               "EditorCaption": ""

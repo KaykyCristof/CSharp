@@ -5,11 +5,9 @@
     public int Duration { get; set; }
     public bool Avaliable { get; set; }
 
-    // Lambda
-    public string DescricaoResumida => 
-    ( $"A música {Name} pertence ao artista: {Artist}" );
+    public string Description => 
+    ( $"{Name} music belongs to the artist: {Artist}" );
    
-
     public Music()
     {
        Console.WriteLine( "Construtor..." );

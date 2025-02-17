@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kayky\\source\\repos\\Projetos\\Account\\",
+  "WorkspaceRootPath": "C:\\Users\\kayky\\source\\repos\\Account\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2363E1C-A0BD-4EB0-9807-0BF5A08B5BE4}|Account\\Account.csproj|c:\\users\\kayky\\source\\repos\\projetos\\account\\account\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2363E1C-A0BD-4EB0-9807-0BF5A08B5BE4}|Account\\Account.csproj|solutionrelative:account\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2363E1C-A0BD-4EB0-9807-0BF5A08B5BE4}|Account\\Account.csproj|c:\\users\\kayky\\source\\repos\\account\\account\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2363E1C-A0BD-4EB0-9807-0BF5A08B5BE4}|Account\\Account.csproj|solutionrelative:account\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2363E1C-A0BD-4EB0-9807-0BF5A08B5BE4}|Account\\Account.csproj|c:\\users\\kayky\\source\\repos\\projetos\\account\\account\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2363E1C-A0BD-4EB0-9807-0BF5A08B5BE4}|Account\\Account.csproj|solutionrelative:account\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2363E1C-A0BD-4EB0-9807-0BF5A08B5BE4}|Account\\Account.csproj|c:\\users\\kayky\\source\\repos\\account\\account\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2363E1C-A0BD-4EB0-9807-0BF5A08B5BE4}|Account\\Account.csproj|solutionrelative:account\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +26,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Projetos\\Account\\Account\\Account.cs",
+              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Account\\Account\\Account.cs",
               "RelativeDocumentMoniker": "Account\\Account.cs",
-              "ToolTip": "C:\\Users\\kayky\\source\\repos\\Projetos\\Account\\Account\\Account.cs",
+              "ToolTip": "C:\\Users\\kayky\\source\\repos\\Account\\Account\\Account.cs",
               "RelativeToolTip": "Account\\Account.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwEgAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T10:59:26.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Projetos\\Account\\Account\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Account\\Account\\Program.cs",
               "RelativeDocumentMoniker": "Account\\Program.cs",
-              "ToolTip": "C:\\Users\\kayky\\source\\repos\\Projetos\\Account\\Account\\Program.cs",
+              "ToolTip": "C:\\Users\\kayky\\source\\repos\\Account\\Account\\Program.cs",
               "RelativeToolTip": "Account\\Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwDYAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwDYAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T10:58:59.283Z",
               "EditorCaption": ""
