@@ -38,3 +38,11 @@ int SomaInteiros( int x, int y ) => x + y ;
 
 Console.WriteLine( "Função sem lambda: " + soma( 10, 5 ) );
 Console.WriteLine( "Função com lambda: " + SomaInteiros( 10, 5 ) );
+
+
+Console.WriteLine( "Por favor, insira um número inteiro:" );
+int numeroX = int.Parse( Console.ReadLine()!);
+
+string defineNumero = ( numeroX % 2 == 0) ? "Número par!\n" : "Número impar!\n";
+
+Console.WriteLine( defineNumero );

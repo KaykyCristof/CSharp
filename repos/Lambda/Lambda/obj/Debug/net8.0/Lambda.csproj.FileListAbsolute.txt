@@ -27,3 +27,4 @@ C:\Users\kayky\source\repos\Projetos\Lambda\Lambda\obj\Debug\net8.0\refint\Lambd
 C:\Users\kayky\source\repos\Projetos\Lambda\Lambda\obj\Debug\net8.0\Lambda.pdb
 C:\Users\kayky\source\repos\Projetos\Lambda\Lambda\obj\Debug\net8.0\Lambda.genruntimeconfig.cache
 C:\Users\kayky\source\repos\Projetos\Lambda\Lambda\obj\Debug\net8.0\ref\Lambda.dll
+C:\Users\kayky\source\repos\Lambda\Lambda\obj\Debug\net8.0\Lambda.sourcelink.json

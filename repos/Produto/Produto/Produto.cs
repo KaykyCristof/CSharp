@@ -1,53 +1,77 @@
-﻿// Definindo esqueleto da classe;
-
-class Produto
+﻿class Produto
 {
-    public string Nome
-    {
-        get => nome;
-        set => nome = !string.IsNullOrEmpty( value ) ? value : throw new ArgumentException( "Erro! Valor inválido para nome!" );
-    }
-
     private string nome;
+    private string marca;
+    private int estoque;
+    private double preco;
+
+    public string Nome 
+    { 
+        get
+        {
+            Console.WriteLine( "Acessando o getter da propriedade Nome." );
+            return nome;
+        }
+
+        set
+        {
+            Console.WriteLine( "Acessando o setter da propriedade Nome." );
+            nome = ( !string.IsNullOrEmpty( value ) ) ? value : throw new ArgumentException( "Valor inválido para nome!" );
+        }
+    }
 
     public string Marca
     {
-        get => marca;
-        set => marca = !string.IsNullOrEmpty( value ) ? value : throw new ArgumentException( "Erro! Valor inválido para marca." );
+        get
+        {
+            Console.WriteLine( "Acessando o getter da propriedade Marca." );
+            return marca;
+        }
+        set
+        {
+            Console.WriteLine( "Acessando o setter da propriedade Marca." );
+            marca = ( !string.IsNullOrEmpty(value) ) ? value : throw new ArgumentException( "Valor inválido para marca!" );
+        }
     }
 
-    private string marca;
-
-    public double Preco
+    public int Estoque 
     {
-        get => preco;
-        set => preco = value > 0 ? value : throw new ArgumentException( "Erro! valor inválido para preço." );
+        get
+        {
+            Console.WriteLine( "Acessando o getter da propriedade Estoque." );
+            return estoque;
+        }
+        set
+        {
+            Console.WriteLine( "Acessando o setter da propriedade Estoque." );
+            estoque = ( value > 0 ) ? value : throw new ArgumentException( "Valor inválido para estoque!" );
+        }
     }
-    
-    private double preco;
 
-    public int Estoque
+    public double Preco 
+    { 
+        get
+        {
+            Console.WriteLine( "Acessando o getter da propriedade Preco." );
+            return preco;
+        }
+        set
+        {
+            Console.WriteLine( "Acessando o setter da propriedade Preco." );
+            preco = ( value > 0 ) ? value : throw new ArgumentException( "Valor inválido para preço!" );
+        }
+    }
+
+    public Produto()
     {
-        get => estoque;
-
-        set => estoque = value > 0 ? value : throw new ArgumentException( "Erro! valor inválido para estoque." );
+        Console.WriteLine( "Construtor..." ); 
     }
 
-    private int estoque;
-
-    public Produto( string nomeProduto, string nomeMarca, double precoProduto, int estoqueProduto )
-    {
-        Nome = nomeProduto;
-        Marca = nomeMarca;
-        Preco = precoProduto;
-        Estoque = estoqueProduto;
-    }
-
-    public string ExibeInformacoes =>
+    public string ExibeProduto =>
     (
-        $"Nome do produto:{Nome}.\n" +
+        $"Nome do produto: {Nome}.\n" +
         $"Marca do produto: {Marca}.\n" +
-        $"Preço do produto: {Preco}.\n" +
-        $"Quantidade em estoque do produto: {Estoque}." 
+        $"Quantidade em estoque do produto: {Estoque}.\n" +
+        $"Preço do produto: {Preco}.\n"
     );
 }

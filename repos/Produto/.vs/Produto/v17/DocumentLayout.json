@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\kayky\\source\\repos\\Produto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3260A980-4B8F-4ABC-AF1C-7C08E4F41C12}|Produto\\Produto.csproj|c:\\users\\kayky\\source\\repos\\produto\\produto\\gerenciadorproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3260A980-4B8F-4ABC-AF1C-7C08E4F41C12}|Produto\\Produto.csproj|solutionrelative:produto\\gerenciadorproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65D58424-D3BE-4D1E-B766-B0A98B8228BD}|Produto\\Produto.csproj|c:\\users\\kayky\\source\\repos\\produto\\produto\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65D58424-D3BE-4D1E-B766-B0A98B8228BD}|Produto\\Produto.csproj|solutionrelative:produto\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3260A980-4B8F-4ABC-AF1C-7C08E4F41C12}|Produto\\Produto.csproj|c:\\users\\kayky\\source\\repos\\produto\\produto\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3260A980-4B8F-4ABC-AF1C-7C08E4F41C12}|Produto\\Produto.csproj|solutionrelative:produto\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65D58424-D3BE-4D1E-B766-B0A98B8228BD}|Produto\\Produto.csproj|c:\\users\\kayky\\source\\repos\\produto\\produto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65D58424-D3BE-4D1E-B766-B0A98B8228BD}|Produto\\Produto.csproj|solutionrelative:produto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3260A980-4B8F-4ABC-AF1C-7C08E4F41C12}|Produto\\Produto.csproj|c:\\users\\kayky\\source\\repos\\produto\\produto\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3260A980-4B8F-4ABC-AF1C-7C08E4F41C12}|Produto\\Produto.csproj|solutionrelative:produto\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3260A980-4B8F-4ABC-AF1C-7C08E4F41C12}|Produto\\Produto.csproj|c:\\users\\kayky\\source\\repos\\produto\\produto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3260A980-4B8F-4ABC-AF1C-7C08E4F41C12}|Produto\\Produto.csproj|solutionrelative:produto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65D58424-D3BE-4D1E-B766-B0A98B8228BD}|Produto\\Produto.csproj|c:\\users\\kayky\\source\\repos\\produto\\produto\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65D58424-D3BE-4D1E-B766-B0A98B8228BD}|Produto\\Produto.csproj|solutionrelative:produto\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,60 +25,47 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GerenciadorProduto.cs",
-              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Produto\\Produto\\GerenciadorProduto.cs",
-              "RelativeDocumentMoniker": "Produto\\GerenciadorProduto.cs",
-              "ToolTip": "C:\\Users\\kayky\\source\\repos\\Produto\\Produto\\GerenciadorProduto.cs",
-              "RelativeToolTip": "Produto\\GerenciadorProduto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T18:24:47.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Produto\\Produto\\Menu.cs",
               "RelativeDocumentMoniker": "Produto\\Menu.cs",
               "ToolTip": "C:\\Users\\kayky\\source\\repos\\Produto\\Produto\\Menu.cs",
               "RelativeToolTip": "Produto\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T18:13:01.95Z",
+              "WhenOpened": "2025-02-18T10:58:31.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Produto.cs",
               "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Produto\\Produto\\Produto.cs",
               "RelativeDocumentMoniker": "Produto\\Produto.cs",
               "ToolTip": "C:\\Users\\kayky\\source\\repos\\Produto\\Produto\\Produto.cs",
               "RelativeToolTip": "Produto\\Produto.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T12:31:24.617Z",
+              "WhenOpened": "2025-02-18T10:39:04.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\Produto\\Produto\\Program.cs",
               "RelativeDocumentMoniker": "Produto\\Program.cs",
               "ToolTip": "C:\\Users\\kayky\\source\\repos\\Produto\\Produto\\Program.cs",
               "RelativeToolTip": "Produto\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T12:30:36.153Z",
+              "WhenOpened": "2025-02-18T10:38:42.497Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
