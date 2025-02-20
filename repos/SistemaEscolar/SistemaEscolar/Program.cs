@@ -22,6 +22,9 @@ class Program
 
         professor.ExibeProfessor();*/
 
+        // Inserindo mudanças para o git detectar;
+        Aluno aluno = new Aluno();
+
         Menu.ExibeMenu();
 
     }
