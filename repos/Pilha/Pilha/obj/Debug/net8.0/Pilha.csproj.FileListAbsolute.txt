@@ -1,0 +1,15 @@
+C:\Users\kayky\source\repos\Pilha\Pilha\bin\Debug\net8.0\Pilha.exe
+C:\Users\kayky\source\repos\Pilha\Pilha\bin\Debug\net8.0\Pilha.deps.json
+C:\Users\kayky\source\repos\Pilha\Pilha\bin\Debug\net8.0\Pilha.runtimeconfig.json
+C:\Users\kayky\source\repos\Pilha\Pilha\bin\Debug\net8.0\Pilha.dll
+C:\Users\kayky\source\repos\Pilha\Pilha\bin\Debug\net8.0\Pilha.pdb
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\Pilha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\Pilha.AssemblyInfoInputs.cache
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\Pilha.AssemblyInfo.cs
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\Pilha.csproj.CoreCompileInputs.cache
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\Pilha.sourcelink.json
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\Pilha.dll
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\refint\Pilha.dll
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\Pilha.pdb
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\Pilha.genruntimeconfig.cache
+C:\Users\kayky\source\repos\Pilha\Pilha\obj\Debug\net8.0\ref\Pilha.dll

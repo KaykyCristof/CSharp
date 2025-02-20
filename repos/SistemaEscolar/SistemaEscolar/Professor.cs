@@ -2,7 +2,7 @@
 
 class Professor
 {
-    private List<Disciplina> listaDisciplinas;
+    public List<Disciplina> listaDisciplinas;
     private string nomeProfessor;
 
     public string NomeProfessor
@@ -35,6 +35,13 @@ class Professor
         listaDisciplinas.Add( disciplina );
         Console.WriteLine( "Disciplina inserida com sucesso! " );
     }
+
+    public int TamanhoLista()
+    {
+        return listaDisciplinas.Count;
+    }
+
+    
 
     public void ExibeProfessor()
     {

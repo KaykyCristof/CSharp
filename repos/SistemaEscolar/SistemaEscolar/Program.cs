@@ -4,7 +4,7 @@ class Program
 {
     public static void Main(string[] args )
     {
-        Professor professor = new();
+        /*Professor professor = new();
         professor.NomeProfessor = "Pedro Moises";
         
         Disciplina disciplina = new();
@@ -20,7 +20,9 @@ class Program
         disciplina.InsereAluno( aluno );
         professor.InsereDisciplina( disciplina );
 
-        professor.ExibeProfessor();
+        professor.ExibeProfessor();*/
+
+        Menu.ExibeMenu();
 
     }
     
