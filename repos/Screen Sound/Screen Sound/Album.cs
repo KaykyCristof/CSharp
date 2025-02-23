@@ -3,11 +3,8 @@
 class Album
 {
     private List<Musica> listaMusicas;
-
     public string NomeAlbum { get; }
    
-    
-    // Definindo o construtor da classe Álbum
     public Album( string nomeDoAlbum )
     {
         if( string.IsNullOrEmpty( nomeDoAlbum ) )
@@ -26,7 +23,6 @@ class Album
     {
         listaMusicas.Add( musica );
     }
-
     public void TempoAlbum()
     {
         int somatorio = 0;
@@ -38,7 +34,6 @@ class Album
 
         Console.WriteLine( $"O tempo de duração total do álbum é: {somatorio}." );
     }
-
     public void ExibeAlbum()
     {
         Console.WriteLine( $"Nome do álbum:{NomeAlbum}." );
@@ -48,5 +43,4 @@ class Album
         }
         TempoAlbum();
     }
-    
 }

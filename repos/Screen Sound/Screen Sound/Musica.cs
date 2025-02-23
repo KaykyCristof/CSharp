@@ -2,12 +2,9 @@
 class Musica
 {
     public string NomeMusica { get; }
-
     public int DuracaoMusica { get; }
-
     public bool Disponivel { get; set; }
 
-    // Definindo o construtor da classe Música.
     public Musica( string nomeDaMusica , int duracaoDaMusica )
     {
         if ( string.IsNullOrEmpty( nomeDaMusica ) )
@@ -40,7 +37,6 @@ class Musica
             Console.WriteLine( "Adquira o plano Plus+" );
         }
     }
-
     public void ExibeMusica()
     {
         Console.WriteLine( $"Nome da música: {NomeMusica}." );

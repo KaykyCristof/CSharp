@@ -2,11 +2,9 @@
 class Banda
 {
     private List<Album> listaAlbum;
-
     public string NomeBanda { get; }
 
-    // Definindo o construtor da classe banda.
-    public Banda(string nomeDaBanda)
+    public Banda( string nomeDaBanda )
     {   
         if( string.IsNullOrEmpty( nomeDaBanda) )
         {
@@ -24,7 +22,6 @@ class Banda
     {
         listaAlbum.Add( album );
     }
-
     public void ExibeBanda()
     {
         Console.WriteLine( $"Nome da banda: {NomeBanda}." );
