@@ -1,57 +1,46 @@
-﻿// Definindo a classe Professor
-
-class Professor
+﻿namespace SistemaEscolar
 {
-    public List<Disciplina> listaDisciplinas;
-    private string nomeProfessor;
-
-    public string NomeProfessor
+    class Professor
     {
-        get
+        private List<Disciplina> listaDisciplinas;
+        public string NomeProfessor { get; }
+       
+        public Professor( string nomeDoProfessor )
         {
-            Console.WriteLine( "Acessando o getter da propriedade NomeProfessor." );
-            return nomeProfessor;
-        }
+            if( string.IsNullOrEmpty( nomeDoProfessor ) )
+            {
+                throw new ArgumentException( "Erro! Valor inválido para o nome do professor!" );
+            }
 
-        set
+            NomeProfessor = nomeDoProfessor;
+            listaDisciplinas = new List<Disciplina>();
+        }
+        
+        public void InsereDisciplina( Disciplina novaDisciplina )
         {
-            Console.WriteLine( "Acessando o setter da propriedade NomeProfessor." );
+            listaDisciplinas.Add( novaDisciplina );
+            Console.WriteLine( "Disciplina inserida com sucesso!" );
+        }
+        public Disciplina BuscaDisciplina( string nomeDisciplina )
+        {
+            for( int i = 0; i < listaDisciplinas.Count; i++ )
+            {
+                if( nomeDisciplina == listaDisciplinas[i].NomeDisciplina )
+                {
+                    return listaDisciplinas[i];
+                }
+            }
             
-            nomeProfessor = ( !string.IsNullOrEmpty(value) ) ? value :
-            throw new ArgumentException( "Valor inválido para o nome do professor!" );
+            return null!;
         }
-    }
-    
-    // Definindo o construtor
-
-    public Professor()
-    {
-        Console.WriteLine( "Construtor da classe professor..." );
-        listaDisciplinas = new List<Disciplina>();
-    }
-
-    public void InsereDisciplina( Disciplina disciplina )
-    {
-        listaDisciplinas.Add( disciplina );
-        Console.WriteLine( "Disciplina inserida com sucesso! " );
-    }
-
-    public int TamanhoLista()
-    {
-        return listaDisciplinas.Count;
-    }
-
-    
-
-    public void ExibeProfessor()
-    {
-        Console.WriteLine( $"\nNome do professor: {NomeProfessor}." );
-        Console.WriteLine( $"\t--- Disciplinas associadas ao professor ---" );
-
-        foreach( var disciplinas in listaDisciplinas )
+        public void ExibeProfessor()
         {
-            disciplinas.ExibeDisciplinas();
-        }
-    } 
-
+            Console.WriteLine( $"Nome do professor:{NomeProfessor}." );
+            Console.WriteLine( "Disciplinas ministradas:" );
+            foreach( Disciplina disciplina in listaDisciplinas )
+            {
+                disciplina.ExibeDisciplina();
+            }
+        }   
+    }
 }

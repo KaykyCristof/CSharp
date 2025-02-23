@@ -1,66 +1,66 @@
-﻿// Definindo a classe Aluno
-
-using System.ComponentModel;
-using System.Data;
-
-class Aluno
+﻿namespace SistemaEscolar
 {
-    private int matricula;
-    private string nome;
-    private List<double> notasAlunos;
-    public int Matricula 
-    { 
-        get
-        {
-            //Console.WriteLine( "Acessando o getter da propriedade Matrícula." );
-            return matricula;
-        }
-       
-        set
-        {
-            //Console.WriteLine( "Acessando o setter da propriedade Matrícula." );
-            matricula = ( value > 0 ) ? value : 
-            throw new ArgumentException( "Valor inválido para Matrícula." );
-        }
-    }
-    public string Nome 
-    { 
-        get
-        {
-            //Console.WriteLine( "Acessando o getter da propriedade Nome." );
-            return nome;
-        }
-          
-        set
-        {
-            //Console.WriteLine( "Acessando o setter da propriedade Nome." );
-            nome = ( !string.IsNullOrEmpty( value ) ) ? value :
-            throw new ArgumentException( "String vazia!" );
-        }
-    }
-    
-    // Definindo o Construtor
-    public Aluno()
+    class Aluno
     {
-        Console.WriteLine( "Construtor da classe aluno..." );
-        notasAlunos = new List<double>();
-    }
+        private double media;
+        private List<double> ListaNotas;
 
-    public void InsereNotas( double nota )
-    {
-        notasAlunos.Add( nota );
-    }
+        public double Media => media;
+        public string NomeAluno { get; set; }
+        public int Matricula { get; }
 
-    public void ExibeAlunos()
-    {
-        Console.WriteLine( $"{Nome}." );
-        Console.WriteLine( $"Matricula do aluno: {Matricula}." );
-        
-        Console.WriteLine( "\t--- Notas do aluno ---" );
-        foreach( double nota in notasAlunos )
+        public Aluno( string nomeDoAluno, int matriculaAluno )
         {
-            Console.Write( nota + " " );
+            if( string.IsNullOrEmpty( nomeDoAluno ) )
+            {
+                throw new ArgumentException( "Erro! Valor inválido para o nome do aluno!" );
+            }
+           
+            if( matriculaAluno < 0 )
+            
+                throw new ArgumentException( "Erro! Valor inválido para a matrícula do aluno!" );
+
+            NomeAluno = nomeDoAluno;
+            Matricula = matriculaAluno;
+            ListaNotas = new List<double>();
         }
-        Console.WriteLine();
+
+        public void CalculaMedia()
+        {
+            media = ListaNotas.Average();
+        }
+        public void InsereNota( double notaAluno )
+        {
+            if( notaAluno < 0 )
+            {
+                throw new ArgumentException( "Erro! Valor inválido para a nota!" );
+            }
+
+            ListaNotas.Add( notaAluno );
+            CalculaMedia();
+
+            Console.WriteLine( "Nota inserida com sucesso!" );
+        }
+        public void ExibeAluno()
+        {
+            Console.WriteLine( $"Nome do aluno: {NomeAluno}." );
+            Console.WriteLine( $"Matrícula do aluno: {Matricula}." );
+            
+            if( ListaNotas.Count == 0 )
+            {
+                Console.WriteLine( "Nenhuma nota inserida!" );
+            }
+            else
+            {
+                Console.Write( "Notas do aluno: " );
+                foreach( double nota in ListaNotas )
+                {
+                    Console.Write( nota + " " );
+                }
+                
+                Console.WriteLine( $"\nMédia do aluno: {Media:F2}" );
+                Console.WriteLine();
+            }
+        }
     }
 }

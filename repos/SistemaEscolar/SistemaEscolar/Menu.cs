@@ -1,197 +1,192 @@
-﻿static class Menu
-{ 
-    private static List<Professor> listaProfessores = new List<Professor>();
-    //private static List<Disciplina> listaDisciplinas = new List<Disciplina>();
+﻿using System.Net;
 
-    // Exibe o menu para inserir as opções;
-    public static void MenuProfessor()
+namespace SistemaEscolar
+{
+    static class Menu
     {
-        Console.WriteLine( "Por favor, escolha alguma opção:" );
-        Console.WriteLine( "1 - Cadastrar professor" );
-        Console.WriteLine( "2 - Cadastrar disciplinas" );
-        Console.WriteLine( "3 - Exibir informações" );
-        Console.WriteLine( "4 - Cadastrar alunos" );
-        Console.WriteLine( "0 - Sair" );
-    }
+        private static List<Professor> listaProfessores = new List<Professor>();
 
-    // Verifica se uma lista genérica está vazia.
-    public static bool ListaVazia<T>( List<T> lista )
-    {
-        if( lista.Count == 0 )
+        public static bool ListaVazia<T>( List<T> lista )
         {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-    // Insere os dados do professor.
-    public static void InsereProfessor( ref Professor professor )
-    {
-        Console.WriteLine( "Por favor, insira o nome do professor:" );
-        string nomeProfessor = Console.ReadLine()!;
-        professor.NomeProfessor = nomeProfessor;
-    }
-
-    // Realiza o cadastro do professor e o insere dentro da lista.
-    public static void CadastraProfessor()
-    {
-        Professor professor = new Professor();
-        InsereProfessor( ref professor );
-        listaProfessores.Add( professor );
-
-        Console.WriteLine("Professor cadastrado com sucesso!");
-    }
-
-    // Verifica se o respectivo professor existe dentro da lista e retorna a sua posição.
-    public static int VerificaProfessor( List<Professor> professor )
-    {
-        Console.WriteLine( "Por favor, insira o nome do professor:" );
-        string nomeProfessor = Console.ReadLine()!;
-
-        int contador = 0;
-
-        for (contador = 0; contador < professor.Count; contador++ )
-        {
-            if( nomeProfessor == professor[contador].NomeProfessor )
+            if( lista.Count == 0 )
             {
-                return contador;
-            }
-        }
-
-        return -1;
-    }
-
-    // Insere a disciplina dentro do respectivo professor no qual irá ministra-lá.
-    public static void InsereDisciplina( ref Disciplina disciplina )
-    {
-        int posicao = VerificaProfessor( listaProfessores );
-        
-        if( posicao == -1 )
-        {
-            Console.WriteLine( "Professor não encontrado!" );
-        }
-        else
-        {
-            Console.WriteLine( "Professor encontrado!" );
-            
-            Console.WriteLine( "Por favor, insira o nome da disciplina:" );
-            string nomeDisciplina = Console.ReadLine()!;
-            disciplina.NomeDisciplina = nomeDisciplina;
-
-            listaProfessores[posicao].InsereDisciplina( disciplina );
-        }
-    }
-
-    // Realiza o cadastro da disciplina.
-    public static void CadastraDisciplina()
-    {
-        if( ListaVazia( listaProfessores ) )
-        {
-            Console.WriteLine( "Erro! Nenhum professor cadastrado!" );
-        }
-        else
-        {
-            Disciplina disciplina = new Disciplina();
-            InsereDisciplina( ref disciplina );
-        }
-    }
-
-
-    public static int VerificaDisciplina( int posProfessor )
-    {
-        Console.WriteLine( "Por favor, insira o nome da disciplina para inserir o aluno:" );
-        string nomeDisciplina = Console.ReadLine()!;
-
-        
-        int posDisciplina;
-
-        for ( posDisciplina = 0; posDisciplina < listaProfessores[posProfessor].TamanhoLista(); posDisciplina++ )
-        {
-           if( nomeDisciplina == listaProfessores[posProfessor].listaDisciplinas[posDisciplina].NomeDisciplina )
-            {
-                return posDisciplina;
-            }
-        }
-
-        return -1;
-    }
-
-    public static void CadastraAluno()
-    {
-        if( ListaVazia( listaProfessores ) )
-        {
-            Console.WriteLine( "Nenhum professor cadastrado!" );
-        }
-        else
-        {
-            int posicao = VerificaProfessor( listaProfessores );
-
-            if( posicao == -1 )
-            {
-                Console.WriteLine( "Professor não encontrado!" );
+                return true;
             }
             else
             {
-                Console.WriteLine( "Professor encontrado!" );
-                int posicaoDisciplina = VerificaDisciplina( posicao );
+                return false;
+            }
+        }
 
-                if( posicaoDisciplina == -1 )
+        public static void CadastraProfessor()
+        {
+            Console.WriteLine( "Por favor, insira o nome do professor:" );
+            string nomeProfessor = Console.ReadLine()!;
+            Professor novoProfessor = new Professor( nomeProfessor );
+            listaProfessores.Add( novoProfessor );
+            Console.WriteLine( "Professor cadastrado com sucesso!" );
+        }
+
+        public static int VerificaProfessor()
+        {
+            Console.WriteLine( "Por favor, insira o nome do professor:" );
+            string nomeProfessor = Console.ReadLine()!;
+
+            for( int i = 0; i < listaProfessores.Count; i++ )
+            {
+                if( nomeProfessor == listaProfessores[i].NomeProfessor )
                 {
-                    Console.WriteLine( "Disciplina não encontrada!" );
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+
+        public static Disciplina VerificaDisciplina( int posicaoProfessor )
+        {
+            Console.WriteLine( "Por favor, insira o nome da disciplina:" );
+            string nomeDisciplina = Console.ReadLine()!;
+
+            Disciplina posicaoDisciplina = listaProfessores[posicaoProfessor].BuscaDisciplina( nomeDisciplina );
+
+            return posicaoDisciplina;
+        }
+
+        public static void CadastraDisciplina()
+        {
+            if( ListaVazia( listaProfessores) )
+            {
+                Console.WriteLine( "Nenhum professor cadastrado!" );
+            }
+            else
+            {
+                int posicao = VerificaProfessor();
+
+                if( posicao != - 1 )
+                {
+                    Console.WriteLine( "Professor encontrado!" );
+                    Console.WriteLine( "Por favor, insira o nome da disciplina:" );
+                    string nomeDisciplina = Console.ReadLine()!;
+                    Disciplina novaDisciplina = new Disciplina( nomeDisciplina );
+                    listaProfessores[posicao].InsereDisciplina( novaDisciplina );
+                    Console.WriteLine( "Disciplina cadastrada com sucesso!" );
                 }
                 else
                 {
-                    Console.WriteLine( "Disciplina encontrada!" );
+                    Console.WriteLine( "Professor não encontrado!" );
                 }
             }
         }
-    }
 
-    public static void ExibeMenu()
-    {
-        int opcao = 0;
-
-        do
+        public static void CadastraAluno()
         {
-            MenuProfessor();
-            opcao = int.Parse( Console.ReadLine()! );
-
-            switch ( opcao )
+            if( ListaVazia( listaProfessores ) )
             {
-                case 1:
+                Console.WriteLine( "Nenhum professor cadastrado!" );
+            }
+            else
+            {
+                int posicaoProfessor = VerificaProfessor();
+
+                if( posicaoProfessor != - 1 )
+                {
+                    Console.WriteLine( "Professor encontrado!" );
+                    Disciplina posicaoDisciplina = VerificaDisciplina( posicaoProfessor );
+                    
+                    if( posicaoDisciplina != null )
+                    {
+                        Console.WriteLine( "Disciplina encontrada!" );
+                        Console.WriteLine( "Por favor, insira o nome do aluno:" );
+                        string nomeAluno = Console.ReadLine()!;
+                        Console.WriteLine( "Por favor, insira a matrícula do aluno:" );
+                        int matriculaAluno = int.Parse( Console.ReadLine()! );
+                        Aluno novoAluno = new Aluno( nomeAluno, matriculaAluno );
+                        posicaoDisciplina.InsereAluno( novoAluno );
+                        Console.WriteLine( "Aluno inserido com sucesso!" );
+                    }
+                    else
+                    {
+                        Console.WriteLine( "Disciplina não encontrada!" );
+                    }
+                }
+                else
+                {
+                    Console.WriteLine( "Professor não encontrado!" );
+                }
+
+            }
+        }
+
+        public static void ExibeProfessores()
+        {
+            if( ListaVazia( listaProfessores ) )
+            {
+                Console.WriteLine( "Nenhum professor cadastrado!" );
+            }
+            else
+            {
+                foreach ( Professor professor in listaProfessores )
+                {
+                    professor.ExibeProfessor();
+                }
+            }
+        }
+
+
+        public static void ExibeOpcoes()
+        {
+            Console.WriteLine( "Por favor, insira uma opção:" );
+            Console.WriteLine( "1 - Cadastrar professor" );
+            Console.WriteLine( "2 - Cadastrar disciplina" );
+            Console.WriteLine( "3 - Inserir aluno" );
+            Console.WriteLine( "4 - Exibir informações" );
+            Console.WriteLine( "0 - Sair" );
+        }
+
+        public static void ExibeMenu()
+        {
+            int opcao = 0;
+
+            do
+            {
+                ExibeOpcoes();
+                opcao = int.Parse( Console.ReadLine()! );
+
+                switch ( opcao )
+                {
+                    case 1:
                     {
                         CadastraProfessor();
                         break;
-                    }
-                case 2:
+                        }
+                    case 2:
                     {
                         CadastraDisciplina();
                         break;
                     }
-                case 3:
-                    {
-                        // Definir função para inserir alunos em suas respectivas disciplinas.
-                        break;
-                    }
-                case 4:
+                    case 3:
                     {
                         CadastraAluno();
                         break;
                     }
-                case 0:
+                    case 4:
+                    {
+                        ExibeProfessores();
+                        break;
+                    }
+                    case 0:
                     {
                         Console.WriteLine( "Saindo..." );
                         break;
                     }
-                default:
+                    default:
                     {
-                        Console.WriteLine( "Opção inválida!" );
+                        Console.WriteLine( "Erro! Opção inválida!" );
                         break;
-                    }    
-            }
-        } while ( opcao != 0 );
+                    }            
+                }
+            } while ( opcao != 0 );
+        }
     }
 }

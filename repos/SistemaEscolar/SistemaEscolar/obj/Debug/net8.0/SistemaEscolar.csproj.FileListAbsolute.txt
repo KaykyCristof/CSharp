@@ -1,0 +1,14 @@
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\net8.0\SistemaEscolar.exe
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\net8.0\SistemaEscolar.deps.json
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\net8.0\SistemaEscolar.runtimeconfig.json
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\net8.0\SistemaEscolar.dll
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\bin\Debug\net8.0\SistemaEscolar.pdb
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0\SistemaEscolar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0\SistemaEscolar.AssemblyInfoInputs.cache
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0\SistemaEscolar.AssemblyInfo.cs
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0\SistemaEscolar.csproj.CoreCompileInputs.cache
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0\SistemaEscolar.dll
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0\refint\SistemaEscolar.dll
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0\SistemaEscolar.pdb
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0\SistemaEscolar.genruntimeconfig.cache
+C:\Users\kayky\Downloads\SistemaEscolar\SistemaEscolar\obj\Debug\net8.0\ref\SistemaEscolar.dll

@@ -16,5 +16,26 @@
         para auxiliar o programador durante a construção de programas, desde a estruturas de dados já implementadas
         chamadas de coleções, a entrada e saída e entre outros.
         Também implementa tipos essenciais como Enums, LINQ( Consulta de dados ) e async/await( Programação assincróna ).
+
+    RunTimes ( Frameworks )
+        Basicamente são os frameworks da aplicação, ele é composto do CLR juntamente da sua própria BCL, irá definir
+        sobre qual o suporte da aplicação, o software ao ser desenvolvido com Frameworks irá depender das funcionalidades
+        do qual o framework oferece.
+
+    // --- Resumo da opera ---
+        De forma geral a linguagem C# é uma linguagem compilada, fortemente tipada, pelo seu tipo ser fortemente tipado
+        é definido em tempo de compilação e durante a execução do código evitando uma série de erros, a linguagem possui
+        a CLR que converte o código C# em IR ( intermediate language ) e que é colocada dentro de um assembly, que possui
+        dois tipos .DLL( Bibliotecas que podem ser reutilizadas ) e .EXE( Programas Windows Forms e Console ), a BCL executa
+        o código no modo JIT( Just in time ) que basicamente a compilação é feita em tempo de execução, é mais lenta do que a 
+        compilação antecipada.
+        A CLR também possui a BCL uma série de assemblies que dão suporte e ferramentas ao programador para desenvolver a suas 
+        aplicações.
+        E por último vem os frameworks que possuem a sua própria CLR e BCL que oferecem uma série de ferramentas para diferentes
+        tipos de aplicações, uma dos principais frameworks do C# é o .NET Framework.
+
+        Aqui acabamos de definir como funciona arquitetura básica de uma aplicação em C#, e espero conseguir me aprofundar ainda 
+        mais nos meus conhecimentos.
+        
 */
 

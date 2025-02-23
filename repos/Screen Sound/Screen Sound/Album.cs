@@ -1,41 +1,52 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿// Definindo a classe Álbum
 
 class Album
 {
-    private List<Music> musicAlbum;
-    public string Name { get; set; }
+    private List<Musica> listaMusicas;
 
-    public int AlbumDuration => musicAlbum.Sum( musicAlbum => musicAlbum.Duration );    
-
-    public Album()
+    public string NomeAlbum { get; }
+   
+    
+    // Definindo o construtor da classe Álbum
+    public Album( string nomeDoAlbum )
     {
-        Console.WriteLine("Construtor...");
-
-        musicAlbum = new List<Music>();
-        Name = string.Empty;
-    }
-
-    public void AddMusic( Music music )
-    {
-        musicAlbum.Add( music );
-    }
-
-    public void ViewMusicAlbum()
-    {
-        foreach( var music in musicAlbum ) {
-            Console.WriteLine( $"Music: {music.Name}" );
-        }
-    }
-
-    public void somatorio()
-    {
-        int soma = 0;
-
-        foreach( var duracao in musicAlbum )
+        if( string.IsNullOrEmpty( nomeDoAlbum ) )
         {
-            soma += duracao.Duration;
+            throw new ArgumentException( "Valor inválido para o nome do álbum!" );
         }
-        
-       Console.WriteLine( soma );
+        else
+        {
+            NomeAlbum = nomeDoAlbum;
+        }
+
+        listaMusicas = new List<Musica>();
     }
+
+    public void AdicionaMusica( Musica musica )
+    {
+        listaMusicas.Add( musica );
+    }
+
+    public void TempoAlbum()
+    {
+        int somatorio = 0;
+
+        foreach( Musica musica in listaMusicas )
+        {
+            somatorio += musica.DuracaoMusica;
+        }
+
+        Console.WriteLine( $"O tempo de duração total do álbum é: {somatorio}." );
+    }
+
+    public void ExibeAlbum()
+    {
+        Console.WriteLine( $"Nome do álbum:{NomeAlbum}." );
+        foreach( Musica musica in listaMusicas )
+        {
+            musica.ExibeMusica();
+        }
+        TempoAlbum();
+    }
+    
 }

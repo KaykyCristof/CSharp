@@ -1,31 +1,23 @@
-﻿class Program
+﻿// Definindo a classe principal do programa
+
+namespace SistemaMusica
 {
-    public static void Main( string[] args )
+    class Program
     {
-        Album queenAlbum = new Album();
-        queenAlbum.Name = "A night of the opera.";
+        public static void Main( string[] args )
+        {
+            Musica musica0 = new Musica( "Bohamian Rhapsody", 310 );
+            musica0.Disponivel = true;
 
-        Music music0 = new Music();
-        music0.Name = "Love Of My Life.";
-        music0.Artist = "Queen";
-        music0.Duration = 202;
-        music0.Avaliable = false;
+            Musica musica1 = new Musica( "Love of my life", 210 );
 
-        Music music1 = new Music();
-        music1.Name = "Bohamian Rhapsody";
-        music1.Artist = "Queen";
-        music1.Duration = 213;
-        music1.Avaliable = true;
-
-        queenAlbum.AddMusic( music0 );
-        queenAlbum.AddMusic( music1 );
-
-        queenAlbum.ViewMusicAlbum();
-
-        
-        queenAlbum.somatorio();
-
-        
+            Album album0 = new Album( "A night at the opera" );
+            album0.AdicionaMusica( musica0 );
+            album0.AdicionaMusica( musica1 );
+           
+            Banda banda0 = new Banda( "Queen" );
+            banda0.AdicionaAlbum( album0 );
+            banda0.ExibeBanda();
+        }
     }
 }
-
