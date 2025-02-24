@@ -1,4 +1,4 @@
-﻿// Definindo a classe música
+﻿namespace ScreenSound.Modelos;
 class Musica
 {
     public string NomeMusica { get; }
@@ -7,23 +7,13 @@ class Musica
 
     public Musica( string nomeDaMusica , int duracaoDaMusica )
     {
-        if ( string.IsNullOrEmpty( nomeDaMusica ) )
+        if ( string.IsNullOrEmpty( nomeDaMusica ) || duracaoDaMusica <= 0 )
         {
-            throw new ArgumentException( "Valor inválido para o nome da música!" );
-        }
-        else
-        {
-            NomeMusica = nomeDaMusica;
+            throw new ArgumentException( "Valores inválidos" );
         }
         
-        if( duracaoDaMusica <= 0 )
-        {
-            throw new ArgumentException( "Valor inválido para a duração da música!" );
-        }
-        else
-        {
-            DuracaoMusica = duracaoDaMusica;
-        }   
+        NomeMusica = nomeDaMusica;
+        DuracaoMusica = duracaoDaMusica;
     }
 
     public void VerificaDisponivel()
@@ -42,6 +32,5 @@ class Musica
         Console.WriteLine( $"Nome da música: {NomeMusica}." );
         Console.WriteLine( $"Duração da música: {DuracaoMusica}." );
         VerificaDisponivel();
-        Console.WriteLine();
     }
 }

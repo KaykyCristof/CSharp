@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\",
+  "WorkspaceRootPath": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\downloads\\sistemaescolar\\sistemaescolar\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\source\\repos\\sistemaescolar\\sistemaescolar\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|solutionrelative:sistemaescolar\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\downloads\\sistemaescolar\\sistemaescolar\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|solutionrelative:sistemaescolar\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\downloads\\sistemaescolar\\sistemaescolar\\disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|solutionrelative:sistemaescolar\\disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\downloads\\sistemaescolar\\sistemaescolar\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|solutionrelative:sistemaescolar\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\downloads\\sistemaescolar\\sistemaescolar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\source\\repos\\sistemaescolar\\sistemaescolar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|solutionrelative:sistemaescolar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\source\\repos\\sistemaescolar\\sistemaescolar\\modelos\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|solutionrelative:sistemaescolar\\modelos\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\source\\repos\\sistemaescolar\\sistemaescolar\\modelos\\disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|solutionrelative:sistemaescolar\\modelos\\disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|c:\\users\\kayky\\source\\repos\\sistemaescolar\\sistemaescolar\\modelos\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B46A5D9-1581-4FB5-8666-26D0FAEFDD27}|SistemaEscolar\\SistemaEscolar.csproj|solutionrelative:sistemaescolar\\modelos\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,61 +40,61 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Menu.cs",
+              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Menu.cs",
               "RelativeDocumentMoniker": "SistemaEscolar\\Menu.cs",
-              "ToolTip": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Menu.cs",
+              "ToolTip": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Menu.cs",
               "RelativeToolTip": "SistemaEscolar\\Menu.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAADwv24AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T21:02:19.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Professor.cs",
-              "DocumentMoniker": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Professor.cs",
-              "RelativeDocumentMoniker": "SistemaEscolar\\Professor.cs",
-              "ToolTip": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Professor.cs",
-              "RelativeToolTip": "SistemaEscolar\\Professor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABCAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Modelos\\Professor.cs",
+              "RelativeDocumentMoniker": "SistemaEscolar\\Modelos\\Professor.cs",
+              "ToolTip": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Modelos\\Professor.cs",
+              "RelativeToolTip": "SistemaEscolar\\Modelos\\Professor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T20:47:21.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Disciplina.cs",
-              "DocumentMoniker": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Disciplina.cs",
-              "RelativeDocumentMoniker": "SistemaEscolar\\Disciplina.cs",
-              "ToolTip": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Disciplina.cs",
-              "RelativeToolTip": "SistemaEscolar\\Disciplina.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Modelos\\Disciplina.cs",
+              "RelativeDocumentMoniker": "SistemaEscolar\\Modelos\\Disciplina.cs",
+              "ToolTip": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Modelos\\Disciplina.cs",
+              "RelativeToolTip": "SistemaEscolar\\Modelos\\Disciplina.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T19:51:28.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Aluno.cs",
-              "DocumentMoniker": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Aluno.cs",
-              "RelativeDocumentMoniker": "SistemaEscolar\\Aluno.cs",
-              "ToolTip": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Aluno.cs",
-              "RelativeToolTip": "SistemaEscolar\\Aluno.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwB8AAAAyAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Modelos\\Aluno.cs",
+              "RelativeDocumentMoniker": "SistemaEscolar\\Modelos\\Aluno.cs",
+              "ToolTip": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Modelos\\Aluno.cs",
+              "RelativeToolTip": "SistemaEscolar\\Modelos\\Aluno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T19:45:33.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Program.cs",
               "RelativeDocumentMoniker": "SistemaEscolar\\Program.cs",
-              "ToolTip": "C:\\Users\\kayky\\Downloads\\SistemaEscolar\\SistemaEscolar\\Program.cs",
+              "ToolTip": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Program.cs",
               "RelativeToolTip": "SistemaEscolar\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

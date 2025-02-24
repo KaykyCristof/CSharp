@@ -1,5 +1,4 @@
-﻿// Definindo a classe Álbum
-
+﻿namespace ScreenSound.Modelos;
 class Album
 {
     private List<Musica> listaMusicas;
@@ -11,17 +10,15 @@ class Album
         {
             throw new ArgumentException( "Valor inválido para o nome do álbum!" );
         }
-        else
-        {
-            NomeAlbum = nomeDoAlbum;
-        }
 
+        NomeAlbum = nomeDoAlbum;
         listaMusicas = new List<Musica>();
     }
 
     public void AdicionaMusica( Musica musica )
     {
         listaMusicas.Add( musica );
+        Console.WriteLine( "Música adicionada com sucesso!" );
     }
     public void TempoAlbum()
     {
@@ -36,11 +33,20 @@ class Album
     }
     public void ExibeAlbum()
     {
-        Console.WriteLine( $"Nome do álbum:{NomeAlbum}." );
-        foreach( Musica musica in listaMusicas )
+        Console.WriteLine( $"Nome do álbum: {NomeAlbum}." );
+        
+        if( listaMusicas.Count == 0 )
         {
-            musica.ExibeMusica();
+            Console.WriteLine( "Nenhuma música registrada!" );
         }
-        TempoAlbum();
+        else
+        {
+            foreach (Musica musica in listaMusicas)
+            {
+                musica.ExibeMusica();
+            }
+
+            TempoAlbum();
+        }
     }
 }

@@ -1,13 +1,4 @@
-﻿// Definir a logo do programa
-// Construir uma exibição para as opções
-// Construir o Menu do Programa
-// Definir um dicionário para inserir as bandas e suas respectivas notas.
-// Inserir novas bandas dentro do dicionário.
-// Exibir o nome de todas as bandas 
-// Inserir as notas dentro de cada banda
-
-
-public class ScreenSound
+﻿public class ScreenSound
 {
     public static Dictionary<string, List<int>> nomeDasBandas = new Dictionary<string, List<int>>
     { 

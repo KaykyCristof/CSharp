@@ -1,4 +1,4 @@
-﻿using System.Net;
+﻿using SistemaEscolar.Modelos;
 
 namespace SistemaEscolar
 {
@@ -20,14 +20,14 @@ namespace SistemaEscolar
 
         public static void CadastraProfessor()
         {
-            Console.WriteLine( "Por favor, insira o nome do professor:" );
+            Console.WriteLine("Por favor, insira o nome do professor:");
             string nomeProfessor = Console.ReadLine()!;
             Professor novoProfessor = new Professor( nomeProfessor );
             listaProfessores.Add( novoProfessor );
             Console.WriteLine( "Professor cadastrado com sucesso!" );
         }
 
-        public static int VerificaProfessor()
+        public static Professor VerificaProfessor()
         {
             Console.WriteLine( "Por favor, insira o nome do professor:" );
             string nomeProfessor = Console.ReadLine()!;
@@ -36,19 +36,30 @@ namespace SistemaEscolar
             {
                 if( nomeProfessor == listaProfessores[i].NomeProfessor )
                 {
-                    return i;
+                    return listaProfessores[i];
                 }
             }
-
-            return -1;
+            return null!;
         }
 
-        public static Disciplina VerificaDisciplina( int posicaoProfessor )
+        public static bool VerificaObjeto( Professor professor )
+        {
+            if( professor == null )
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static Disciplina VerificaDisciplina( Professor posicaoProfessor )
         {
             Console.WriteLine( "Por favor, insira o nome da disciplina:" );
             string nomeDisciplina = Console.ReadLine()!;
 
-            Disciplina posicaoDisciplina = listaProfessores[posicaoProfessor].BuscaDisciplina( nomeDisciplina );
+            Disciplina posicaoDisciplina = posicaoProfessor.BuscaDisciplina( nomeDisciplina );
 
             return posicaoDisciplina;
         }
@@ -61,20 +72,20 @@ namespace SistemaEscolar
             }
             else
             {
-                int posicao = VerificaProfessor();
+                Professor professor = VerificaProfessor();
 
-                if( posicao != - 1 )
+                if( VerificaObjeto( professor ) )
                 {
-                    Console.WriteLine( "Professor encontrado!" );
-                    Console.WriteLine( "Por favor, insira o nome da disciplina:" );
-                    string nomeDisciplina = Console.ReadLine()!;
-                    Disciplina novaDisciplina = new Disciplina( nomeDisciplina );
-                    listaProfessores[posicao].InsereDisciplina( novaDisciplina );
-                    Console.WriteLine( "Disciplina cadastrada com sucesso!" );
+                    Console.WriteLine( "Professor não encontrado!" );
                 }
                 else
                 {
-                    Console.WriteLine( "Professor não encontrado!" );
+                    Console.WriteLine("Professor encontrado!");
+                    Console.WriteLine("Por favor, insira o nome da disciplina:");
+                    string nomeDisciplina = Console.ReadLine()!;
+                    Disciplina novaDisciplina = new Disciplina(nomeDisciplina);
+                    professor.InsereDisciplina( novaDisciplina );
+                    Console.WriteLine( "Disciplina cadastrada com sucesso!" );
                 }
             }
         }
@@ -87,34 +98,33 @@ namespace SistemaEscolar
             }
             else
             {
-                int posicaoProfessor = VerificaProfessor();
+                Professor professor = VerificaProfessor();
 
-                if( posicaoProfessor != - 1 )
-                {
-                    Console.WriteLine( "Professor encontrado!" );
-                    Disciplina posicaoDisciplina = VerificaDisciplina( posicaoProfessor );
-                    
-                    if( posicaoDisciplina != null )
-                    {
-                        Console.WriteLine( "Disciplina encontrada!" );
-                        Console.WriteLine( "Por favor, insira o nome do aluno:" );
-                        string nomeAluno = Console.ReadLine()!;
-                        Console.WriteLine( "Por favor, insira a matrícula do aluno:" );
-                        int matriculaAluno = int.Parse( Console.ReadLine()! );
-                        Aluno novoAluno = new Aluno( nomeAluno, matriculaAluno );
-                        posicaoDisciplina.InsereAluno( novoAluno );
-                        Console.WriteLine( "Aluno inserido com sucesso!" );
-                    }
-                    else
-                    {
-                        Console.WriteLine( "Disciplina não encontrada!" );
-                    }
-                }
-                else
+                if( VerificaObjeto( professor ) )
                 {
                     Console.WriteLine( "Professor não encontrado!" );
                 }
+                else
+                {
+                    Console.WriteLine("Professor encontrado!");
+                    Disciplina posicaoDisciplina = VerificaDisciplina(professor);
 
+                    if (posicaoDisciplina != null)
+                    {
+                        Console.WriteLine("Disciplina encontrada!");
+                        Console.WriteLine("Por favor, insira o nome do aluno:");
+                        string nomeAluno = Console.ReadLine()!;
+                        Console.WriteLine("Por favor, insira a matrícula do aluno:");
+                        int matriculaAluno = int.Parse(Console.ReadLine()!);
+                        Aluno novoAluno = new Aluno(nomeAluno, matriculaAluno);
+                        posicaoDisciplina.InsereAluno(novoAluno);
+                        Console.WriteLine("Aluno inserido com sucesso!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Disciplina não encontrada!");
+                    }
+                }
             }
         }
 
@@ -132,7 +142,6 @@ namespace SistemaEscolar
                 }
             }
         }
-
 
         public static void ExibeOpcoes()
         {

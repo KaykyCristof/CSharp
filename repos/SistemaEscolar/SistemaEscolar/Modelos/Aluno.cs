@@ -1,4 +1,4 @@
-﻿namespace SistemaEscolar
+﻿namespace SistemaEscolar.Modelos
 {
     class Aluno
     {
