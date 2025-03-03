@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "SistemaEscolar\\Menu.cs",
               "ToolTip": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Menu.cs",
               "RelativeToolTip": "SistemaEscolar\\Menu.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T21:02:19.713Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "SistemaEscolar\\Modelos\\Professor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T20:47:21.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T20:47:21.526Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "SistemaEscolar\\Modelos\\Disciplina.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAkwAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T19:51:28.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T19:51:28.083Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "SistemaEscolar\\Modelos\\Aluno.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T19:45:33.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T19:45:33.83Z"
             },
             {
               "$type": "Document",
@@ -96,7 +93,7 @@
               "RelativeDocumentMoniker": "SistemaEscolar\\Program.cs",
               "ToolTip": "C:\\Users\\kayky\\source\\repos\\SistemaEscolar\\SistemaEscolar\\Program.cs",
               "RelativeToolTip": "SistemaEscolar\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T19:45:07.401Z",
               "EditorCaption": ""

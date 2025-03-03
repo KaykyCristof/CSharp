@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Globalization;
-using SistemaEscolar;
+using SistemaEscolar.Modelos;
 
 namespace SistemaEscolarApp
 {
@@ -8,7 +8,13 @@ namespace SistemaEscolarApp
     { 
         public static void Main( string[] args )
         {
-            Menu.ExibeMenu();
+            //Menu.ExibeMenu();
+            Aluno aluno0 = new Aluno( "Pedro", 1475 );
+            Aluno aluno1 = aluno0;
+            aluno0 = null!;
+            aluno1.ExibeAluno();
+            aluno0.ExibeAluno();
+
         }       
     }
 }
