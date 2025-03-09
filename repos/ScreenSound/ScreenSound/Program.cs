@@ -1,56 +1,30 @@
-﻿using ScreenSound.Models;
+﻿using ScreenSound.Modelos;
 using ScreenSound.Menus;
 
-
-internal class Program
+internal class ScreenSoundApp
 {
     public static void Main( string[] args )
     {
-        Music music0 = new Music( "Love of my life", 210 );
-        Music music1 = new Music("Bohemian Rhapsody", 310 );
+        Dictionary<string, Banda> bandasRegistradas = new Dictionary<string, Banda>();
 
-        Album album0 =  new Album( "A night of the Opera" );
-        album0.InsertMusic( music0 );
-        album0.InsertMusic( music1 );
+        Dictionary<int, Menu> menus = new Dictionary<int, Menu> 
+        {
+            { 1, new InsereBandaMenu() },
+            { 2, new InsereAlbumMenu() },
+            { 3, new InsereMusicaMenu() },
+            { 4, new AvaliacaoMenu() },
+            { 5, new ExibeMenu() },
+            { 0, new SairMenu() },
+        };
 
-        Band band0 = new Band( "Queen" );
-        band0.InsertAlbum( album0 );
-
-        band0.InsertReview( new BandReview( 10 ) );
-        band0.InsertReview( new BandReview( 8 ) );
-        band0.InsertReview( new BandReview( 7 ) );
-
-        Dictionary<string, Band> registeredBands = new Dictionary<string, Band>();
-        registeredBands.Add( band0.Name, band0 );
-
-        Dictionary<int, Menu > menu = new Dictionary<int, Menu>();
-
-        menu.Add( 1, new MenuInserted() );
-        menu.Add( 2, new MenuRemoved() );
-        menu.Add( 3, new MenuAlbum() );
-        menu.Add( 4, new MenuMusic() );
-        menu.Add( 5, new MenuReview() );
-        menu.Add( 6, new MenuDisplay() );
-
-        int option = 0;
-
+        int opcao = 0;
         do
         {
-            Console.WriteLine( "Please, insert the option:" );
-
-
-        }while( option != 0 ); 
-
-
-
-            
-            
-      
-
-
-
-
-
-
-    }
+            Menu.ExibeLogo();
+            Menu.ExibeOpcoes();
+            opcao = int.Parse( Console.ReadLine()! );
+            Menu executa = menus[opcao];
+            executa.Insere( bandasRegistradas );
+        } while( opcao != 0 );
+    } 
 }

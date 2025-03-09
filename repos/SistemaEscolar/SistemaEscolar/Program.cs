@@ -11,7 +11,7 @@ namespace SistemaEscolarApp
             //Menu.ExibeMenu();
             Aluno aluno0 = new Aluno( "Pedro", 1475 );
             Aluno aluno1 = aluno0;
-            aluno0 = null!;
+            //aluno0 = null!;
             aluno1.ExibeAluno();
             aluno0.ExibeAluno();
 

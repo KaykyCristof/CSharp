@@ -1,49 +1,50 @@
-﻿using ScreenSound.Models;
-using System.Runtime.InteropServices;
+﻿using ScreenSound.Modelos;
 namespace ScreenSound.Menus;
 
 internal class Menu
 {
-    public bool EmptyDictionary( Dictionary<string, Band> registeredBands )
+    public static void ExibeLogo()
     {
-        if( registeredBands.Count == 0 ) return true;
+        Console.WriteLine(@"
+░██████╗░█████╗░██████╗░███████╗███████╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
+██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
+╚█████╗░██║░░╚═╝██████╔╝█████╗░░█████╗░░██╔██╗██║  ╚█████╗░██║░░██║██║░░░██║██╔██╗██║██║░░██║
+░╚═══██╗██║░░██╗██╔══██╗██╔══╝░░██╔══╝░░██║╚████║  ░╚═══██╗██║░░██║██║░░░██║██║╚████║██║░░██║
+██████╔╝╚█████╔╝██║░░██║███████╗███████╗██║░╚███║  ██████╔╝╚█████╔╝╚██████╔╝██║░╚███║██████╔╝
+╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝░░╚══╝  ╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═════╝░");
+
+        Console.WriteLine("\nBem vindo ao ScreenSound!\n");
+    }
+    public static void FormataOpcao( string opcao )
+    {
+        int tamString = opcao.Length;
+        string formata = string.Empty.PadLeft( tamString, '*' );
+        Console.WriteLine( formata );
+        Console.WriteLine( opcao );
+        Console.WriteLine( formata );
+    }
+    public static void ExibeOpcoes()
+    {
+        Console.WriteLine( "Por favor, insira uma opção:" );
+        Console.WriteLine( "1 - Inserir banda" );
+        Console.WriteLine( "2 - Inserir álbum" );
+        Console.WriteLine( "3 - Inserir música" );
+        Console.WriteLine( "4 - Avalia banda" );
+        Console.WriteLine( "5 - Exibe informações" );
+        Console.WriteLine( "0 - Sair" );
+    }
+    public static void Intervalo()
+    {
+        Thread.Sleep( 2000 );
+        Console.Clear();
+    }
+    public static bool DicionarioVazio( Dictionary<string, Banda> bandaRegistradas )
+    {
+        if( bandaRegistradas.Count == 0 ) return true;
         return false;
     }
-
-    public bool CheckKey( Dictionary<string, Band> registeredBands, string nameBand )
+    public virtual void Insere( Dictionary<string, Banda> bandasRegistradas )
     {
-        if( registeredBands.ContainsKey( nameBand ) ) return true;
-        return false;
+        Console.Clear();
     }
-
-    public Album CheckAlbum( Dictionary <string, Band> registeredBands, string nameBand )
-    {
-        Console.WriteLine( "Please, inserted the name of album:" );
-        string nameAlbum = Console.ReadLine()!;
-
-        List<Album> album = registeredBands[nameBand].GetAlbum();
-
-
-        foreach( Album i in album )
-        {
-            if( nameAlbum == i.Name )
-            {
-                Album found = i;
-                return found;
-            }
-        }
-        
-        return null!;
-    }
-
-    public void DisplayTitle( string title )
-    {
-        int numCharacters = title.Length;
-        string equal = string.Empty.PadLeft( numCharacters, '=');
-        Console.WriteLine( equal );
-        Console.WriteLine( title );
-        Console.WriteLine( equal );
-    }
-
-
 }
