@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kayky\\Downloads\\ScreenSound\\ScreenSound\\ScreenSound.csproj",
+      "projectUniqueName": "C:\\Users\\kayky\\source\\repos\\ScreenSound\\ScreenSound\\ScreenSound.csproj",
       "projectName": "ScreenSound",
-      "projectPath": "C:\\Users\\kayky\\Downloads\\ScreenSound\\ScreenSound\\ScreenSound.csproj",
+      "projectPath": "C:\\Users\\kayky\\source\\repos\\ScreenSound\\ScreenSound\\ScreenSound.csproj",
       "packagesPath": "C:\\Users\\kayky\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kayky\\Downloads\\ScreenSound\\ScreenSound\\obj\\",
+      "outputPath": "C:\\Users\\kayky\\source\\repos\\ScreenSound\\ScreenSound\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

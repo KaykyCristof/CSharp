@@ -13,7 +13,9 @@ internal class ScreenSoundApp
             { 2, new InsereAlbumMenu() },
             { 3, new InsereMusicaMenu() },
             { 4, new AvaliacaoMenu() },
-            { 5, new ExibeMenu() },
+            { 5, new AvaliaAlbum() },
+            { 6, new AvaliaMusica() },
+            { 7, new ExibeMenu() },
             { 0, new SairMenu() },
         };
 
@@ -26,5 +28,8 @@ internal class ScreenSoundApp
             Menu executa = menus[opcao];
             executa.Insere( bandasRegistradas );
         } while( opcao != 0 );
+
+        
+
     } 
 }

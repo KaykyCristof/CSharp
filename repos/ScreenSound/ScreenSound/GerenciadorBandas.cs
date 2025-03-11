@@ -19,4 +19,17 @@ internal static class GerenciadorBandas
         }
         return null!;
     }
+
+    public static Musica VerificaMusica( Album album, string nomeMusica )
+    {
+        List<Musica> musicas = album.GetMusica();
+
+        foreach( Musica musica in musicas )
+        {
+            if( nomeMusica == musica.Nome )
+                return musica;
+        }
+
+        return null!;
+    }
 }

@@ -1,8 +1,8 @@
 ﻿namespace ScreenSound.Modelos;
 
-internal class Banda : Abstract
+internal class Banda : IAvaliavel
 {
-    private List<Album> albuns;
+    public List<Album> albuns;
     private List<Avaliacao> notas;
     
     public string Nome { get; }
@@ -39,7 +39,13 @@ internal class Banda : Abstract
         return new Banda( nomeBanda );
     }
 
-    public override void ExibeInformacoes()
+    public bool ListaVazia<T>(List <T> lista )
+    {
+        if (lista.Count == 0) return true;
+        return false;
+    }
+
+    public void ExibeInformacoes()
     {
         Console.WriteLine( $"Nome da banda: {Nome}." );
         Console.WriteLine( $"Média da banda: {Media}." );
@@ -58,7 +64,7 @@ internal class Banda : Abstract
         else
         {
             foreach( Avaliacao nota in notas )
-                Console.Write( nota + " " );
+                Console.Write( nota.Nota + " " );
             Console.WriteLine();
         }
     }

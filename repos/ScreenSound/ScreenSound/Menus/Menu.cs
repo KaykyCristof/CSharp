@@ -30,7 +30,9 @@ internal class Menu
         Console.WriteLine( "2 - Inserir álbum" );
         Console.WriteLine( "3 - Inserir música" );
         Console.WriteLine( "4 - Avalia banda" );
-        Console.WriteLine( "5 - Exibe informações" );
+        Console.WriteLine( "5 - Avaliar álbum" );
+        Console.WriteLine( "6 - Avaliar música" );
+        Console.WriteLine( "7 - Exibe informações" );
         Console.WriteLine( "0 - Sair" );
     }
     public static void Intervalo()
